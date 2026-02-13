@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    --primary: 250 60% 68%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 30% 94%;
+    --secondary-foreground: 220 20% 30%;
+
+    --muted: 40 20% 95%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 340 60% 72%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 250 60% 68%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 25% 15%;
+    --sidebar-primary: 250 60% 68%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 30% 94%;
+    --sidebar-accent-foreground: 220 20% 30%;
+    --sidebar-border: 220 15% 90%;
+    --sidebar-ring: 250 60% 68%;
+
+    --pastel-blue: 210 80% 82%;
+    --pastel-green: 160 50% 78%;
+    --pastel-pink: 340 60% 82%;
+    --pastel-yellow: 45 80% 85%;
+
+    --font-serif: 'DM Serif Display', serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+  }
+
+  ::selection {
+    background: hsl(250 60% 68% / 0.2);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
