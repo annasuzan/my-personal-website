@@ -70,7 +70,7 @@ const Navbar = () => {
           {[
             { label: "Experience", to: "/experience" },
             { label: "Projects", to: "/projects" },
-            { label: "Skills", to: "/skills" },
+            // { label: "Skills", to: "/skills" },
             { label: "Contact", to: "/contact" },
           ].map((item) => (
             <Link

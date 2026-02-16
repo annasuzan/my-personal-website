@@ -20,15 +20,26 @@ const Hero = () => {
         >
           Anna Susan Cherian
         </motion.h1>
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-loose"
         >
-          A software developer crafting clean, thoughtful digital experiences. db vdj nd,
-        </motion.p>
-        <motion.div
+          <p className="mb-6">
+            Hello! I'm a passionate developer who loves creating things that live on
+            the internet. My journey in web development started when I decided to try
+            customizing a WordPress theme — turns out hacking together a custom reblog
+            button taught me a lot about HTML & CSS!
+          </p>
+
+          <p>
+            Fast-forward to today, I've had the privilege of working on a variety of
+            projects ranging from small business websites to large-scale web applications.
+            My focus is on writing clean, efficient, and maintainable code.
+          </p>
+        </motion.div>
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
@@ -46,7 +57,7 @@ const Hero = () => {
           >
             Get In Touch
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
