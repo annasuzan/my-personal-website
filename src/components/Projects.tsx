@@ -3,7 +3,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Zone",
+    title: "Zone ",
     description:
       "An agentic event scheduler that allows a user to put in their schedule using an UI interface featuring a chatbox and get an optimized schedule saved in their Google Calendar.",
     tech: ["React", "FastAPI", "Google Calendar API", "Gemini API"],
