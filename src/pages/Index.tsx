@@ -15,9 +15,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 pt-24 md:pt-28">
         {/* Hero */}
-        <section className="min-h-[85vh] flex items-center justify-center px-6">
+        <section className="relative z-10 min-h-[85vh] flex items-center justify-center px-6">
           <div className="max-w-4xl mx-auto w-full text-center">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ const Index = () => {
                   href="https://drive.google.com/file/d/1kMFii8934TeeSbv0e7pgOlYvMnUIHdQj/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-3 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all duration-300 text-base md:text-lg"
+                  className="relative z-20 px-8 py-3 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all duration-300 text-base md:text-lg"
                 >
                   Resume
                 </a>
@@ -78,7 +78,7 @@ const Index = () => {
         {/* <About /> */}
 
         {/* Explore / Navigation Cards */}
-        <section className="flex flex-col items-center -mt-16 pb-16 px-6">
+        <section className="flex flex-col items-center mt-12 md:-mt-16 pb-16 px-6">
           <div className="max-w-5xl w-full">
             <motion.h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-left">
               Explore

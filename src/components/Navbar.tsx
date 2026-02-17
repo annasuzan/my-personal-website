@@ -31,10 +31,10 @@ const Navbar = () => {
         scrolled ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm" : ""
       }`}
     >
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto px-6 py-3 md:py-4 flex items-center justify-between min-h-[80px]">
         {isHome ? (
   <motion.div
-    className="flex flex-col font-mono text-xs md:text-sm leading-tight"
+    className="flex flex-col font-mono text-[10px] md:text-sm leading-tight"
     animate={{ y: [0, -2, 0] }}
     transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
   >
