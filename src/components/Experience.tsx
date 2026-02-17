@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import sapIcon from "@/assets/sap-icon.avif";
 
 type Role = {
   role: string;
@@ -99,8 +100,8 @@ const Experience = () => {
                 <div className="flex items-center mb-2 space-x-2">
                   {/* Icon */}
                   <img
-                    src="/sap-icon.avif"  
-                    alt="Company Name Logo"
+                    src={sapIcon}
+                    alt={`${company.company} Logo`}
                     className="h-8 w-auto object-contain"
                   />
                   {/* Company Name */}
