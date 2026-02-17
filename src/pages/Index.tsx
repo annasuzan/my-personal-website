@@ -49,12 +49,10 @@ const Index = () => {
               </p>
 
               <p className="mb-6">
-                As a developer, I’m fascinated by how technology can help improve access 
-                and alleviate challenges faced by our society. I’m especially drawn to 
-                the space where sustainability meets inclusivity. I believe that the 
-                solutions we as engineers develop are efficient, scalable, and equitable. 
-                And, that’s my hope in the long run, to deliver code that not only runs 
-                smoothly but also runs responsibly.
+                  As a developer, I’m fascinated by how technology can help improve access and alleviate challenges faced by our society.
+                   I’m especially drawn to the space where sustainability meets inclusivity. I believe that the solutions we build should 
+                   be efficient, scalable, and equitable. And, that’s my hope in the long run, to deliver code that not only 
+                   runs smoothly but responsibly as well.
               </p>
 
               <p>
