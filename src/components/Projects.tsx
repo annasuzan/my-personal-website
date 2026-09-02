@@ -3,6 +3,50 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Tunnel Vision",
+    description:
+      "An NYC subway activity visualizer that correlates live MTA train positions with historical weather and ridership data across all five boroughs, using per-borough Prophet models to forecast next-hour ridership conditioned on live weather.",
+    tech: ["React", "FastAPI", "Apache Spark", "Apache Kafka", "Prophet"],
+    github: "https://github.com/CS-GY-6513-Project/Tunnel-Vision",
+    time: "Apr - May 2026",
+    type: "course",
+    name: "Big Data @ NYU",
+    // live: "https://example.com",
+  },
+  {
+    title: "Virtual Stock Trading Simulator",
+    description:
+      "A stock portfolio management and trading simulation platform built on a serverless AWS architecture, letting users track, analyze, and manage virtual investments with real-time order matching, watchlists, and AI-driven news sentiment analysis without financial risk.",
+    tech: ["React", "AWS Lambda", "DynamoDB", "Python"],
+    github: "https://github.com/annasuzan/Virtual-Stock-Trading-Sim",
+    time: "Mar - May 2026",
+    type: "course",
+    name: "Cloud Computing @ NYU",
+    // live: "https://example.com",
+  },
+  {
+    title: "Scaling Laws on SVG Models",
+    description:
+      "A research study on scaling laws for models trained on SVG data. This covers dataset preprocessing and tokenization, power-law fitting under standard and μP re-parameterization, and evaluation of unconditional SVG generation and completion.",
+    tech: ["Python", "PyTorch", "Jupyter Notebook"],
+    github: "https://github.com/annasuzan/Scaling-Laws-On-SVG-Models",
+    time: "Apr - May 2026",
+    type: "course",
+    name: "Machine Learning @ NYU",
+    // live: "https://example.com",
+  },
+  {
+    title: "Dining Concierge",
+    description:
+      "A conversational dining concierge service that recommends restaurants by location, cuisine, and party size. Built on an AWS pipeline (Lex, Lambda, SQS, OpenSearch, DynamoDB) that gathers preferences via chat and emails curated recommendations pulled from 1000+ Yelp restaurant listings.",
+    tech: ["Amazon Lex", "AWS Lambda", "DynamoDB", "OpenSearch"],
+    github: "https://github.com/annasuzan/Dining-Concierge-using-AWS",
+    time: "Feb 2026",
+    type: "course",
+    name: "Cloud Computing @ NYU",
+    // live: "https://example.com",
+  },
+  {
     title: "Zone ",
     description:
       "An agentic event scheduler that allows a user to put in their schedule using an UI interface featuring a chatbox and get an optimized schedule saved in their Google Calendar.",

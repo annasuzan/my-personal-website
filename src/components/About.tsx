@@ -36,6 +36,7 @@
 
 
 import { motion } from "framer-motion";
+import { RESUME_URL } from "@/lib/constants";
 
 const About = () => {
   return (
@@ -69,7 +70,7 @@ const About = () => {
             </p>
 
             <a
-            href="https://drive.google.com/file/d/1kMFii8934TeeSbv0e7pgOlYvMnUIHdQj/view?usp=sharing"
+            href={RESUME_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-6 px-8 py-3 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all duration-300 text-base md:text-lg"

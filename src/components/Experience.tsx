@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import sapIcon from "@/assets/sap-icon.avif";
+import nyuIcon from "@/assets/nyu-icon.png";
 
 type Role = {
   role: string;
@@ -10,6 +11,7 @@ type Role = {
 
 type CompanyExperience = {
   company: string;
+  companyIcon: string;
   companyPeriod: string;
   companyLocation: string;
   roles: Role[];
@@ -18,7 +20,29 @@ type CompanyExperience = {
 
 const experiences: CompanyExperience[] = [
   {
+    company: "NYU Center for Urban Science and Progress",
+    companyIcon: nyuIcon,
+    companyPeriod: "2026",
+    companyLocation: "Brooklyn, NY",
+    roles: [
+      {
+        role: "Research Assistant",
+        period: "June 2026 — August 2026",
+        description: [
+          <>
+          <span className="font-bold">Adapted a Point Transformer V3 (PTv3) semantic segmentation model</span>, pre-trained on the DALES dataset, for vehicle segmentation in urban aerial LiDAR scans.
+          </>,
+          <>
+          Resolved <span className="font-bold">CRS and point-density mismatches</span> between training and production data, <span className="font-bold">achieving ~95% accuracy.</span>
+          </>
+        ],
+        tech: ["Python", "PyTorch"],
+      },
+    ],
+  },
+  {
     company: "SAP SuccessFactors",
+    companyIcon: sapIcon,
     companyPeriod: "2022 — 2025",
     companyLocation: "Bengaluru, India",
     roles: [
@@ -100,7 +124,7 @@ const Experience = () => {
                 <div className="flex items-center mb-2 space-x-2">
                   {/* Icon */}
                   <img
-                    src={sapIcon}
+                    src={company.companyIcon}
                     alt={`${company.company} Logo`}
                     className="h-8 w-auto object-contain"
                   />
